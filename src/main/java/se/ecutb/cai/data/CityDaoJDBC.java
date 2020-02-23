@@ -113,8 +113,7 @@ public class CityDaoJDBC implements CityDao {
     }
 
     private PreparedStatement create_FindAll(Connection connection) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_ALL);
-        return preparedStatement;
+        return connection.prepareStatement(FIND_BY_ALL);
     }
 
 
